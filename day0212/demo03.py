@@ -19,8 +19,8 @@ Python如何动态的
 """
 
 class Person(object):
-    "表名只有name 和mp属性可以被动态的添加"
-    __slots__ = ("name", "mp")
+    "表名只有name 和mp,hp属性可以被动态的添加"
+    __slots__ = ("name", "mp", "hp")
     "类属性"
     isAlive = False
     def __init__(self,_hp):
@@ -40,5 +40,5 @@ print(p1.name)
 
 
 #wheelnum 没有通过 __slots__的审核所以不能被动态添加
-# p.wheelnum = 4
-# print(p.wheelnum)
+p.wheelnum = 4
+print(p.wheelnum)
