@@ -41,3 +41,5 @@ class Person(object):
 # print(Person.age)
 
 
+
+# TODO 明天上班了需要做一个实力属性和类属性的对比案例
